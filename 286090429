@@ -13,7 +13,7 @@ a1:Button("Load Script 3 (VG hub)",function()
     loadstring(game:GetObjects("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub")[1].Source)()
     a1:DestroyGui()
 end)
-a1:Button("Load Script 4",function()
+a1:Button("Load Gun Mods (auto, recoil, fire rate, ect)",function()
    loadstring(game:HttpGet("https://pastebin.com/q5r0ipyK"))();
     a1:DestroyGui()
 end)
