@@ -1,0 +1,15 @@
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local LSTring = "https://raw.githubusercontent.com/IDevscripts/TayHub/main"
+local listOfGames = {
+    ["Murder Mystery 2"] = 142823291,
+    ["Arsenal"] = 286090429
+}
+for i,v in pairs(listOfGames) do
+    if game.PlaceId == v then
+        game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "SkayHub",
+            Text = "Loading "..gameName.."..."
+        })
+        loadstring(game:HttpGet(LSTring..v, true))()
+    end
+end
